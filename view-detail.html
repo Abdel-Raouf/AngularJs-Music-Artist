@@ -1,0 +1,29 @@
+<div class="form-group">
+  <label for="textName">Artist Name:</label>
+  <input type="text" id="textName" class="form-control" data-ng-model="Item.name" />
+</div>
+<div class="form-group">
+  <label for="compgenre">Artist genre:</label>
+  <select name="compgenre" id="compbgenre" class="form-control" data-ng-model="Item.genre">
+    <option></option>
+    <option value="Rock">Rock</option>
+    <option value="Alternative">Alternative</option>
+    <option value="Rap">Rap</option>
+    <option value="Modern">Modern</option>
+    <option value="New Wave">New Wave</option>
+  </select>
+</div>
+<div>
+  <label for="compRating">Artist Rating:</label>
+  <select name="compRating" id="compRating" class="form-control" data-ng-model="Item.rating">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+</div>
+<div>
+  <button class="btn btn-primary" data-ng-click="save()">Save</button>
+  <button class="btn btn-primary" data-ng-click="cancel()">Cancel</button>
+</div>
